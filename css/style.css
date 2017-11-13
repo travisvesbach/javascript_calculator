@@ -1,0 +1,57 @@
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.container {
+	width: 300px;
+	border: 1px solid black;
+	background-color: lightgrey;
+	height: 400px;
+	position: relative;
+	left: 50%;
+	margin-left: -150px;
+	top: 100px;
+	padding: 5px;
+}
+
+.row {
+	width: 100%;
+	height: 16.66%;
+	float: left;
+}
+
+.screen, .button {
+	position: relative;
+	border: 1px solid black;
+	float: left;
+	height: calc(100% - 4px);
+	font-size: 25px;
+	align-items: center;
+	margin: 2px;
+	display: inline-flex;
+	text-align: center;
+}
+
+.screen {
+	width: calc(100% - 4px);
+
+}
+
+.button {
+	width: calc(25% - 4px);
+	cursor: pointer;
+}
+
+.equals {
+	height: calc(200% - 4px);
+	z-index: 100;
+}
+
+.zero {
+	width: calc(50% - 4px);
+}
+
+p {
+	width: 100%;
+}
