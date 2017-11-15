@@ -58,7 +58,8 @@ function clicked_to_console(classVal, button){
 function calculate() {
 	if (total === '') {
 		total = parseFloat(input);
-	} else {
+
+	} else if (input !== '') {
 		switch(operator) {
 			case '+':
 				add(total, parseFloat(input));
